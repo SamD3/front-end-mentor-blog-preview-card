@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Blog preview card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+      --main: #hsl(47, 88%, 63%);
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .body {
+      background-color: hsl(47, 88%, 63%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      font-family: Figtree, sans-serif;
+    }
+
+    .panel {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 8px 8px 0 hsl(0, 0%, 7%);
+      border-color: hsl(0, 0%, 7%);
+      border-style: solid;
+      padding: 20px;
+      width: 300px;
+    }
+
+    .illustration {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      background-color: hsl(47, 88%, 63%);
+      border-radius: 6px;
+      color: black;
+      font-size: 10px;
+      font-weight: 800;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+
+      width: fit-content;
+    }
+
+    .publish-date {
+      color: hsl(0, 0%, 50%);
+      font-size: 10px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .description {
+      color: hsl(0, 0%, 50%);
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .author-image {
+      width: 25px;
+      height: auto;
+      margin-right: 10px;
+    }
+
+    .author-name {
+      color: black;
+      font-size: 10px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body class="body">
+
+  <div class="panel">
+    <img src="./assets/images/illustration-article.svg" alt="Illustration" class="illustration">
+    <div class="tag">
+      Learning
+    </div>
+
+    <div class="publish-date">Published 21 Dec 2023</div>
+    <H3 class="title">HTML & CSS foundations</H3>
+    <p class="description">These languages are the backbone of every website, defining structure, content, and
+      presentation.</p>
+    <div class="row">
+      <img src="./assets/images/image-avatar.webp" alt="Author image" class="author-image">
+      <div class="author-name">Greg Hooper</div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
+
+Questions
+1. Where should I be putting my margin and padding? Here I've just used margin bottom on each element to define the
+vertical spacing but I'm not sure if that's the best way to do it. Ideally I would like to define a vertical margin
+variable and be able to control it globally somewhere. Is that ever done?
+2. I've used a lot of divs and classes here, is that okay?
+3. The padding on my tag class feels messy. Could I have done this any cleaner?
+4. I've used the font weights (600, 800) and size (16px) given in the style guide but it doesn't look quite right. Have
+I done something wrong?
